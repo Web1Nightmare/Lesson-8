@@ -1,0 +1,13 @@
+<section class="product container {{ class ?? '' }}
+  {% if reversed == true %}
+    product_reversed
+  {% endif %}
+">
+  <img
+    src="{{ product.img }}"
+    alt="{{ product.title }}"
+    class="product__img"
+  >
+  {% include '@components/productDescription.html.twig' with {
+  } %}
+</section>

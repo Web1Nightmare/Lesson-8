@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 16px;
+  line-height: 34px;
+  text-decoration: none;
+  color: #fff;
+  transition: box-shadow 0.5s;
+}
+.nav__link:hover {
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 1);
+
+}
+.nav__link + .nav__link {
+  margin-left: 16px;
+}
+
+.nav__link_active {
+  font-weight: 600;
+}

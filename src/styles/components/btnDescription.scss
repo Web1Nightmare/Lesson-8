@@ -1,0 +1,29 @@
+.product__price {
+    color:#DB7093;
+    border: 1px solid #DB7093;
+    padding: 0 12px;
+    display: block;
+}
+.product__info {
+    display: block;
+    padding: 0;
+    color:#DB7093;
+    margin-left: 14px;
+}
+.product__navigation{
+    display: flex;
+}
+.view__more--products {
+    background-color: #DB7093;
+    color: #fff;
+    padding: 0 27px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    display: block;
+    margin: 29px auto 89px;
+    height: 36.65px;
+
+}

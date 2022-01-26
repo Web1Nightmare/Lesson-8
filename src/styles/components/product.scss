@@ -1,0 +1,38 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+    max-width: 890px;
+}
+.product + .product {
+    margin-top: 39px;
+}
+.product > img {
+    flex: 3;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+.product__description {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    justify-content: space-evenly;
+}
+.product__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #4A4A4A;
+}
+.product__text { 
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #717171;
+}

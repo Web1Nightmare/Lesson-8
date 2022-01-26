@@ -1,0 +1,14 @@
+  <div class="product__description 
+        {% if reversed == true %}
+          product__Desciption--reversed
+        {% endif %}">
+    <h4 class="product__title">
+        {{ product.title }}
+    </h4>
+    <p class="product__text">
+        {{ product.description }}
+    </p>
+
+     {% include '@components/productNavigation.html.twig' with {
+  } %}
+</div>

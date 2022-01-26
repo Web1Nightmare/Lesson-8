@@ -1,0 +1,30 @@
+<h2 class="contactus__title">
+    Contact us
+</h2>
+<div class="contactus__container">
+  {% include '@components/field.html.twig' with {
+      type : 'text' ,
+      class: 'contactus__input',
+      placeholder: 'Name' ,
+  } %}
+{% include '@components/field.html.twig' with {
+      type : "text" ,
+      class: "contactus__input",
+      placeholder: "Surname" ,
+  } %}
+{% include '@components/field.html.twig' with {
+      type : "text" ,
+      class: "contactus__input",
+      placeholder: "Email" ,
+  } %}
+{% include '@components/textarea.html.twig' with {
+      class: "contactus__textarea",
+      placeholder: "Message",
+  } %}
+  <button
+  type="{{ type ?? 'button' }}"
+  class="{{ class ?? 'contactus__btn btn view__more--products' }}"
+>
+  {{"Send message"}}
+</button>
+</div>

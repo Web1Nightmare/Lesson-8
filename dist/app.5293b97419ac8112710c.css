@@ -1,0 +1,360 @@
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/app.scss ***!
+  \*******************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #DB7093;
+  height: 50px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header__search-field {
+  margin-right: 16px;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 16px;
+  line-height: 34px;
+  text-decoration: none;
+  color: #fff;
+  transition: box-shadow 0.5s;
+}
+
+.nav__link:hover {
+  box-shadow: 0px 2px 0px 0px white;
+}
+
+.nav__link + .nav__link {
+  margin-left: 16px;
+}
+
+.nav__link_active {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0 12px;
+  min-height: 34px;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.btn_filled {
+  background-color: white;
+  color: #DB7093;
+}
+
+.btn_outlined {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.field {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 34px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.field::placeholder {
+  color: inherit;
+  font-family: inherit;
+}
+
+.field_outlined {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: white;
+}
+
+.field_filled {
+  background-color: #F3F3F3;
+  color: #717171;
+}
+
+.page {
+  padding-top: 50px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  max-width: 890px;
+}
+
+.product + .product {
+  margin-top: 39px;
+}
+
+.product > img {
+  flex: 3;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.product__description {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  justify-content: space-evenly;
+}
+
+.product__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4A4A4A;
+}
+
+.product__text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #717171;
+}
+
+.product__price {
+  color: #DB7093;
+  border: 1px solid #DB7093;
+  padding: 0 12px;
+  display: block;
+}
+
+.product__info {
+  display: block;
+  padding: 0;
+  color: #DB7093;
+  margin-left: 14px;
+}
+
+.product__navigation {
+  display: flex;
+}
+
+.view__more--products {
+  background-color: #DB7093;
+  color: #fff;
+  padding: 0 27px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+  display: block;
+  margin: 29px auto 89px;
+  height: 36.65px;
+}
+
+.product_reversed {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.product__Desciption--reversed > * {
+  margin-left: auto;
+}
+
+.product__Desciption--reversed {
+  margin-right: 45px;
+}
+
+.main__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 43px auto 39px;
+  text-align: center;
+  color: #4A4A4A;
+}
+
+.contactus__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins;
+}
+
+.contactus__container > * {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+.contactus__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4A4A4A;
+}
+
+.contactus__input {
+  width: 400px;
+  height: 34px;
+  margin-bottom: 28px;
+}
+
+.contactus__textarea {
+  width: 400px;
+  height: 113px;
+  resize: none;
+  background: #F3F3F3;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  padding: 0 12px;
+  border: none;
+}
+
+.contactus__btn {
+  margin: 0 0 68px 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+footer {
+  background: #F3F3F3;
+  padding: 9px 0 26px 0;
+}
+
+footer > .container > nav > a.nav__link {
+  color: #4A4A4A;
+}
+
+footer > .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__logo-seaction {
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 17px;
+}
+
+.footer__law {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #DB7093;
+}

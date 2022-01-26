@@ -1,0 +1,12 @@
+ <div class="product__navigation">
+    {% include '@components/button.html.twig' with {
+        style: 'outlined',
+        class: 'product__price',
+        text: 'Buy ' ~ product.price ~ '',
+    } %}
+    {% include '@components/button.html.twig' with {
+        style: 'outlined',
+        class: 'product__info',
+        text: 'learn more',
+    } %}
+    </div>

@@ -1,0 +1,45 @@
+{% set data = json('./data.json') %}
+
+{% extends '@layouts/app.html.twig' %}
+
+{% block title %}
+  {{ data.title }}
+{% endblock %}
+
+{% block content %}
+
+{% include '@components/header.html.twig' with {
+  links: [
+    { title: 'Home', href: '/', active: true },
+    { title: 'About', href: '/about' },
+    { title: 'Contact', href: '/contact-us' },
+    { title: 'Products', href: '/products' },
+  ]
+} %}
+
+<main class="container">
+
+  {% include '@components/title.html.twig' with {} %}
+  
+  {% for product in data.products %}
+    {% include '@components/product.html.twig' with {
+      product,
+      reversed: loop.index % 2 == 0,
+    } %}
+  {% endfor %}
+  
+ {% include '@components/button.html.twig' with {
+      text: 'View more products',
+      class: 'view__more--products',
+    } %}
+  {% include '@components/contactus.html.twig' with {} %}
+
+</main>  
+<footer class="footer">
+
+{% include '@components/footer.html.twig' with {} %}
+</footer>
+{% endblock %}
+
+
+

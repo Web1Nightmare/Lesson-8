@@ -1,0 +1,11 @@
+.product_reversed {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.product__Desciption--reversed > * {
+    margin-left: auto;
+}
+.product__Desciption--reversed {
+    margin-right: 45px;
+}

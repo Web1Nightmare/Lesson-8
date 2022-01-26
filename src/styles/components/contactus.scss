@@ -1,0 +1,48 @@
+.contactus__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+}
+.contactus__container > * {
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 34px;
+}
+.contactus__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4A4A4A;
+}
+
+.contactus__input {
+    width: 400px;
+    height: 34px;
+    margin-bottom: 28px;
+}
+.contactus__textarea {
+    width: 400px;
+    height: 113px;
+    resize: none;
+    background: #F3F3F3;
+    border-radius: 8px;
+    margin-bottom: 28px;
+    padding: 0 12px;
+    border: none;
+}
+.contactus__btn {
+    margin: 0 0 68px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+}

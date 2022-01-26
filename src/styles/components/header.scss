@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #DB7093;
+  height: 50px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header__search-field {
+
+  margin-right: 16px;
+
+}
+.logo{
+    margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+<nav class="nav">
+  {% for link in links %}
+    <a
+      class="nav__link
+        {% if link.active is defined %}
+          nav__link_active
+        {% endif %}
+      "
+      href="{{ link.href }}"
+    >
+      {{ link.title }}
+    </a>
+  {% endfor %}
+</nav>

@@ -1,0 +1,29 @@
+footer {
+    background: #F3F3F3;
+    padding: 9px 0 26px 0;
+}
+footer > .container >  nav > a.nav__link {
+    color: #4A4A4A;
+}
+footer > .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__logo-seaction{
+
+    text-align: center;
+}
+.footer__logo {
+    margin-bottom: 17px;
+}
+.footer__law {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    // text-align: center;
+    color: #DB7093;
+}
